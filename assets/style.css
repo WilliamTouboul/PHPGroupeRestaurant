@@ -33,15 +33,16 @@
 
 @media screen and (max-width:700px) {
     .wtCarouselElements {
-
         width: 100%;
         height: auto;
+    }
+    #wtLogoNavbar {
+        display:none;
     }
 }
 
 
 footer {
-    background-color:pink;
     padding-top : 55px;
     padding-bottom: 55px;
 }
