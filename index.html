@@ -5,19 +5,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- css -->
     <link href="assets/style.css" rel="stylesheet">
-    <title>Document</title>
+
+    <title>All in Bagel</title>
 </head>
 
-<body>
+<body id="top">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acceuil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">A propos</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown link
+                            </a>
 
-    <div class="d-flex text-center justify-content-center border containerMaster">
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
 
+                </ul>
+                <!-- Logo -->
+                <span class="navbar-nav mx-auto" id="wtLogoNavbar">
+                    <a class="navbar-brand" href="#top" id="logo">All-in Baggle</a>
+                </span>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/AllInBagels/" target="_blank">facebook</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">insta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">0625689475</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carousel" class="carousel slide carousel-fade" data-bs-interval="3000" data-bs-ride="carousel">
+        <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+                <img src="assets/img/bagel1.jpg" class="d-block w-100 vh-100" alt="bagel1">
+                <div class="carousel-caption d-none d-md-block">
+                    <p class="wtCarouselTitle">Bagel 1</p>
+                    <p class="wtCarouselDesc">Recette : xxx, xxxx, xxxx, .... </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/bagel2.jpg" class="d-block w-100 vh-100" alt="bagel2">
+                <div class="carousel-caption d-none d-md-block">
+                    <p class="wtCarouselTitle">Bagel 2</p>
+                    <p class="wtCarouselDesc">Recette : xxx, xxxx, xxxx, .... </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/bagel3.jpg" class="d-block w-100 vh-100" alt="bagel3">
+                <div class="carousel-caption d-none d-md-block">
+                    <p class="wtCarouselTitle">Bagel 3</p>
+                    <p class="wtCarouselDesc">Recette : xxx, xxxx, xxxx, .... </p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
     </div>
-    <!-- Script -->
+
+    <!-- Page-->
+    <div class="text-center">
+        <h2> Menu tout ca etc </h2>
+        <div id="menu">Menu ... </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
     <script src="assets/script.js"></script>
 </body>
 

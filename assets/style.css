@@ -1,0 +1,25 @@
+.containerMaster {
+    background-color: red;
+}
+
+#wtLogoNavbar {
+    text-align: center;
+}
+
+#carousel {
+    margin-bottom: 50px;
+}
+
+.wtCarouselTitle {
+    font-size: 48px;
+}
+
+.wtCarouselDesc {
+    font-size: 36px;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial
+}
