@@ -2,7 +2,6 @@
     background-color: red;
 }
 
-
 #wtLogoNavbar {
     text-align: center;
 }
@@ -29,8 +28,7 @@
     height: 100vh;
     width: 100%;
 }
-
-
+/* Media queries pour effacer le texte du carousel et l'adapté a la taille du periph */
 @media screen and (max-width:700px) {
     .wtCarouselElements {
         width: 100%;
@@ -40,7 +38,6 @@
         display:none;
     }
 }
-
 
 footer {
     padding-top : 55px;
