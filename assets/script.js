@@ -5,10 +5,3 @@ $(document).on('mouseover', '.ndContentImage', function (e) {
 $(document).on('mouseout', '.ndContentImage', function (e) {
     $('img', this).toggleClass('ndContentImageHover');
 });
-
-
-
-
-
-
-
