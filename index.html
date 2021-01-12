@@ -13,181 +13,231 @@
 </head>
 
 <body id="top">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Acceuil</a>
-                    </li>
-                    <li class="nav-item">
-                        <!-- Lien Menu -->
-                        <a class="nav-link" href="#wtMenu">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <!-- Lien About -->
-                        <a class="nav-link" href="#">A propos</a>
-                    </li>
-                </ul>
-                <!-- Logo -->
-                <span class="navbar-nav mx-auto" id="wtLogoNavbar">
-                    <a class="navbar-brand" href="#top" id="logo">All-in Baggle</a>
-                </span>
-                <!-- Lien RS & Tel  -->
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.facebook.com/AllInBagels/" target="_blank">facebook</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">insta</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">0625689475</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Carousel -->
-    <!-- Transition Fade et interval de 3s -->
-    <div id="carousel" class="carousel slide carousel-fade" data-bs-interval="3000" data-bs-ride="carousel">
-        <div class="carousel-inner text-center">
-            <div class="carousel-item active">
-                <!-- Premiere image du carousel + caption -->
-                <img src="assets/img/bagel1.jpg" class="d-block wtCarouselElements" alt="bagel1">
-                <div class="carousel-caption d-none d-md-block">
-                    <p class="wtCarouselTitle">Bagel 1</p>
-                    <p class="wtCarouselDesc">Recette : xxx, xxxx, xxxx, .... </p>
-                </div>
-            </div>
-            <!-- Seconde image du carousel + caption -->
-            <div class="carousel-item">
-                <img src="assets/img/bagel2.jpg" class="d-block wtCarouselElements" alt="bagel2">
-                <div class="carousel-caption d-none d-md-block">
-                    <p class="wtCarouselTitle">Bagel 2</p>
-                    <p class="wtCarouselDesc">Recette : xxx, xxxx, xxxx, .... </p>
-                </div>
-            </div>
-            <!-- troisieme image du carousel + Caption -->
-            <div class="carousel-item">
-                <img src="assets/img/bagel3.jpg" class="d-block wtCarouselElements" alt="bagel3">
-                <div class="carousel-caption d-none d-md-block">
-                    <p class="wtCarouselTitle">Bagel 3</p>
-                    <p class="wtCarouselDesc">Recette : xxx, xxxx, xxxx, .... </p>
-                </div>
-            </div>
-        </div>
-        <!-- Bouton pour changer de slide -->
-        <a class="carousel-control-prev" href="#carousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </a>
+    <div id="wtSidebar" class="sidebar wtDisableNone" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+        <a href="#"><span class="icon-text">about</span></a><br>
+        <a href="#"><span class="icon-text"></span>services</a></span></a><br>
+        <a href="#"><span class="icon-text"></span>clients</span></a><br>
+        <a href="#"><span class="icon-text"></span>contact<span></a>
     </div>
-    <!-- Page-->
-    <div class="text-center">
-        <h2> Menu tout ca etc </h2>
-        <div id="wtMenu">Menu ...
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies ac augue eget interdum. Suspendisse
-            augue enim, gravida quis pulvinar eu, dignissim in mi. Ut consequat leo sit amet neque lobortis, quis
-            lobortis mi molestie. Cras posuere dolor eu porttitor vehicula. Sed leo orci, auctor at quam ac, varius
-            vestibulum velit. Sed vel est nulla. Nam vitae euismod justo. Proin pulvinar eros eget elit consequat
-            tristique. Morbi vitae magna ut ligula varius pharetra. Donec ultricies dui turpis, nec blandit enim luctus
-            vel. In ex nibh, auctor vitae congue non, sodales non ligula. Sed ut mauris sagittis, convallis dolor et,
-            condimentum dolor. Phasellus nec scelerisque lorem. Maecenas est nisl, hendrerit vitae congue at, tincidunt
-            ac erat. Nunc et massa eget dui venenatis aliquet.
 
-            Morbi velit dolor, tincidunt quis nibh a, congue ornare dolor. Mauris lacinia turpis enim, in imperdiet
-            felis interdum at. Quisque dolor nisl, tincidunt quis metus vitae, facilisis dapibus sem. Donec leo nibh,
-            tempor a magna lobortis, imperdiet imperdiet lacus. Nulla viverra metus dolor, commodo efficitur libero
-            malesuada ac. Etiam justo quam, auctor at pellentesque vehicula, elementum ac lectus. Fusce finibus luctus
-            odio quis efficitur. Morbi in ante sed urna blandit varius. Proin pharetra dolor sed semper ultrices.
+    <div id="wtMain">
 
-            Maecenas sed metus sit amet nunc cursus condimentum nec et enim. Integer venenatis, lorem sit amet dictum
-            faucibus, quam elit euismod lectus, at gravida mauris urna id sapien. Phasellus fermentum mauris id orci
-            imperdiet congue. Maecenas justo purus, pulvinar non diam in, luctus auctor sapien. Praesent pretium lacinia
-            ipsum, vitae ultrices ex scelerisque nec. Integer dignissim rhoncus scelerisque. Pellentesque mollis turpis
-            eget enim maximus egestas.
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="wtNavbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Lien Menu -->
+                            <a class="nav-link" href="#wtMenu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Lien About -->
+                            <a class="nav-link" href="#">A propos</a>
+                        </li>
+                    </ul>
+                    <!-- Logo -->
+                    <span class="navbar-nav mx-auto" id="wtLogoNavbar">
+                        <a class="navbar-brand" href="#top" id="logo">All-in Baggle</a>
+                    </span>
+                    <!-- Lien RS & Tel  -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.facebook.com/AllInBagels/"
+                                target="_blank">facebook</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">insta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">0625689475</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-            Integer id lacus et metus vestibulum mattis. Aliquam vitae dui lorem. Nam accumsan vel augue non placerat.
-            Nullam gravida erat at tempor commodo. Fusce sagittis risus ac augue lobortis, et ornare ex fermentum.
-            Aliquam tellus risus, efficitur eget nisl nec, ultricies ornare justo. Mauris purus elit, bibendum at
-            condimentum a, mollis vel orci. Nam tincidunt interdum nisl vel bibendum. Morbi ante neque, ultrices eget
-            nunc sed, tempus sagittis nisl. In tincidunt est quis velit tincidunt laoreet.
+        <!-- Carousel -->
+        <!-- Transition Fade et interval de 3s -->
+        <div id="carousel" class="carousel slide carousel-fade" data-bs-interval="3000" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+                <div class="carousel-item active">
+                    <!-- Premiere image du carousel + caption -->
+                    <img src="assets/img/bagel1.jpg" class="d-block wtCarouselElements" alt="bagel1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="wtCarouselTitle">Bagel 1</p>
+                        <p class="wtCarouselDesc">Recette : xxx, xxxx, xxxx, .... </p>
+                    </div>
+                </div>
+                <!-- Seconde image du carousel + caption -->
+                <div class="carousel-item">
+                    <img src="assets/img/bagel2.jpg" class="d-block wtCarouselElements" alt="bagel2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="wtCarouselTitle">Bagel 2</p>
+                        <p class="wtCarouselDesc">Recette : xxx, xxxx, xxxx, .... </p>
+                    </div>
+                </div>
+                <!-- troisieme image du carousel + Caption -->
+                <div class="carousel-item">
+                    <img src="assets/img/bagel3.jpg" class="d-block wtCarouselElements" alt="bagel3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="wtCarouselTitle">Bagel 3</p>
+                        <p class="wtCarouselDesc">Recette : xxx, xxxx, xxxx, .... </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Bouton pour changer de slide -->
+            <a class="carousel-control-prev" href="#carousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+        <!-- Page-->
+        <div class="text-center">
+            <h2> Menu tout ca etc </h2>
+            <div id="wtMenu">Menu ...
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies ac augue eget interdum.
+                Suspendisse
+                augue enim, gravida quis pulvinar eu, dignissim in mi. Ut consequat leo sit amet neque lobortis, quis
+                lobortis mi molestie. Cras posuere dolor eu porttitor vehicula. Sed leo orci, auctor at quam ac, varius
+                vestibulum velit. Sed vel est nulla. Nam vitae euismod justo. Proin pulvinar eros eget elit consequat
+                tristique. Morbi vitae magna ut ligula varius pharetra. Donec ultricies dui turpis, nec blandit enim
+                luctus
+                vel. In ex nibh, auctor vitae congue non, sodales non ligula. Sed ut mauris sagittis, convallis dolor
+                et,
+                condimentum dolor. Phasellus nec scelerisque lorem. Maecenas est nisl, hendrerit vitae congue at,
+                tincidunt
+                ac erat. Nunc et massa eget dui venenatis aliquet.
 
-            Quisque aliquam, orci sed fermentum rutrum, massa ligula egestas ipsum, id semper risus mauris quis magna.
-            Vivamus magna elit, varius bibendum faucibus quis, blandit suscipit justo. Aenean lacinia libero ullamcorper
-            diam lacinia ultrices. Mauris risus lectus, vulputate eget luctus eu, viverra non massa. Proin eget ex eu
-            elit sodales dictum id ultricies felis. Fusce vitae accumsan diam. Morbi tristique metus nisi, vitae
-            consectetur velit cursus eu. Donec fringilla, arcu ut consequat lacinia, dui eros auctor est, sit amet
-            rhoncus libero lorem ut lacus. Proin nulla libero, ornare id hendrerit at, tincidunt a mauris. Donec auctor
-            varius magna, vitae egestas quam fringilla a. Proin sagittis vehicula nunc, id luctus augue convallis et.
-            Maecenas eleifend odio mauris, vel euismod tortor dictum id.
+                Morbi velit dolor, tincidunt quis nibh a, congue ornare dolor. Mauris lacinia turpis enim, in imperdiet
+                felis interdum at. Quisque dolor nisl, tincidunt quis metus vitae, facilisis dapibus sem. Donec leo
+                nibh,
+                tempor a magna lobortis, imperdiet imperdiet lacus. Nulla viverra metus dolor, commodo efficitur libero
+                malesuada ac. Etiam justo quam, auctor at pellentesque vehicula, elementum ac lectus. Fusce finibus
+                luctus
+                odio quis efficitur. Morbi in ante sed urna blandit varius. Proin pharetra dolor sed semper ultrices.
 
-            Aliquam finibus massa lectus, id sodales quam suscipit vitae. Aliquam consectetur vulputate risus, vel
-            rhoncus leo interdum sed. Duis scelerisque condimentum enim et cursus. Nunc in eleifend velit. Nulla tempus
-            varius elit, vel congue mi congue nec. Vivamus tempus consequat libero et fermentum. Aliquam convallis
-            luctus est in bibendum. Nam nisi nisl, laoreet nec dolor sit amet, efficitur tempus urna. Etiam finibus
-            vitae quam ut gravida. Morbi facilisis, ante ac condimentum dictum, ex nisi luctus libero, eget fermentum mi
-            dolor et nibh.
+                Maecenas sed metus sit amet nunc cursus condimentum nec et enim. Integer venenatis, lorem sit amet
+                dictum
+                faucibus, quam elit euismod lectus, at gravida mauris urna id sapien. Phasellus fermentum mauris id orci
+                imperdiet congue. Maecenas justo purus, pulvinar non diam in, luctus auctor sapien. Praesent pretium
+                lacinia
+                ipsum, vitae ultrices ex scelerisque nec. Integer dignissim rhoncus scelerisque. Pellentesque mollis
+                turpis
+                eget enim maximus egestas.
 
-            Donec tristique risus vitae tincidunt maximus. Integer vehicula, magna vitae fringilla cursus, mi est
-            fermentum nulla, in fermentum sem tellus nec libero. Duis quis nunc nisl. Vestibulum ut porttitor nulla, sit
-            amet mattis lectus. Nam eleifend bibendum viverra. Aliquam rutrum dolor eget tincidunt aliquet. In pretium
-            sagittis diam, tincidunt euismod tortor dictum porttitor. Integer eget lacus congue, suscipit magna sit
-            amet, suscipit dui. Sed gravida lacinia interdum. Curabitur dignissim porta tortor, tincidunt accumsan nulla
-            tincidunt at. Nulla a erat luctus, elementum leo sed, rhoncus est. Etiam ultrices nunc at quam imperdiet
-            gravida. Nullam at quam quam. Vestibulum auctor faucibus risus, vel ornare justo pellentesque tempus. Nam
-            dictum posuere vehicula. Morbi posuere aliquet vestibulum.
+                Integer id lacus et metus vestibulum mattis. Aliquam vitae dui lorem. Nam accumsan vel augue non
+                placerat.
+                Nullam gravida erat at tempor commodo. Fusce sagittis risus ac augue lobortis, et ornare ex fermentum.
+                Aliquam tellus risus, efficitur eget nisl nec, ultricies ornare justo. Mauris purus elit, bibendum at
+                condimentum a, mollis vel orci. Nam tincidunt interdum nisl vel bibendum. Morbi ante neque, ultrices
+                eget
+                nunc sed, tempus sagittis nisl. In tincidunt est quis velit tincidunt laoreet.
 
-            Pellentesque neque nisi, egestas vitae pretium eget, imperdiet et augue. Nam nec dapibus lacus. Nulla
-            vulputate placerat turpis sed pulvinar. Sed vitae velit ac enim feugiat pellentesque at eget libero. Sed
-            imperdiet maximus est, id efficitur tortor dictum id. Praesent efficitur elit in eros tincidunt, faucibus
-            viverra purus cursus. Integer non finibus odio, eu dignissim nulla. Aenean dignissim, nulla nec blandit
-            vestibulum, nulla ligula suscipit tellus, sed consectetur risus velit vel ipsum. Nulla ut porttitor augue.
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras a orci ac
-            turpis dignissim mollis. Nullam dolor purus, facilisis vulputate interdum ultricies, ultrices quis dui.
-            Etiam ac odio urna. Curabitur sed nisi sem. Suspendisse hendrerit massa quis feugiat blandit.
+                Quisque aliquam, orci sed fermentum rutrum, massa ligula egestas ipsum, id semper risus mauris quis
+                magna.
+                Vivamus magna elit, varius bibendum faucibus quis, blandit suscipit justo. Aenean lacinia libero
+                ullamcorper
+                diam lacinia ultrices. Mauris risus lectus, vulputate eget luctus eu, viverra non massa. Proin eget ex
+                eu
+                elit sodales dictum id ultricies felis. Fusce vitae accumsan diam. Morbi tristique metus nisi, vitae
+                consectetur velit cursus eu. Donec fringilla, arcu ut consequat lacinia, dui eros auctor est, sit amet
+                rhoncus libero lorem ut lacus. Proin nulla libero, ornare id hendrerit at, tincidunt a mauris. Donec
+                auctor
+                varius magna, vitae egestas quam fringilla a. Proin sagittis vehicula nunc, id luctus augue convallis
+                et.
+                Maecenas eleifend odio mauris, vel euismod tortor dictum id.
 
-            Phasellus feugiat lobortis justo ut tristique. Praesent sed purus id dolor vulputate tempor vitae eget
-            neque. Praesent sagittis, libero vitae commodo luctus, justo augue luctus lectus, vitae vehicula neque ante
-            sit amet justo. Phasellus venenatis, nisl a scelerisque consequat, leo nisi convallis arcu, vel tincidunt
-            massa justo ac ligula. Nullam eu ipsum est. Vivamus nisl purus, viverra a hendrerit ut, ornare vitae urna.
-            Donec pharetra, sem luctus congue imperdiet, quam augue pretium sem, vitae iaculis felis eros id tortor.
-            Praesent nec mi quam. Pellentesque aliquam tortor ut lectus semper tincidunt. Sed ac purus ex. Aliquam ipsum
-            eros, faucibus ac metus et, mattis interdum libero. Aliquam erat volutpat. Etiam sed tristique lacus, vel
-            consectetur ipsum. Phasellus molestie ex eget ex vehicula, nec interdum nibh gravida. Fusce eget urna est.
+                Aliquam finibus massa lectus, id sodales quam suscipit vitae. Aliquam consectetur vulputate risus, vel
+                rhoncus leo interdum sed. Duis scelerisque condimentum enim et cursus. Nunc in eleifend velit. Nulla
+                tempus
+                varius elit, vel congue mi congue nec. Vivamus tempus consequat libero et fermentum. Aliquam convallis
+                luctus est in bibendum. Nam nisi nisl, laoreet nec dolor sit amet, efficitur tempus urna. Etiam finibus
+                vitae quam ut gravida. Morbi facilisis, ante ac condimentum dictum, ex nisi luctus libero, eget
+                fermentum mi
+                dolor et nibh.
 
-            Phasellus faucibus non dui non volutpat. Quisque id libero eget arcu cursus pellentesque. Pellentesque a
-            nulla sagittis, rutrum tellus sed, gravida quam. Nullam sapien ipsum, euismod quis tortor quis, porta
-            vehicula velit. Aliquam ut purus eget ante tincidunt molestie. Aenean auctor tristique augue, in semper
-            dolor molestie non. Proin volutpat, libero at semper gravida, justo erat finibus libero, at luctus ipsum
-            nisi id tellus. Nunc quis ligula ex. Pellentesque in nulla a nibh fringilla iaculis vel a odio. Morbi id
-            quam erat. Donec et tellus sem. Nullam eleifend mi non tellus maximus rutrum. Vestibulum ante ipsum primis
-            in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sit amet mauris et tellus dictum
-            finibus.
+                Donec tristique risus vitae tincidunt maximus. Integer vehicula, magna vitae fringilla cursus, mi est
+                fermentum nulla, in fermentum sem tellus nec libero. Duis quis nunc nisl. Vestibulum ut porttitor nulla,
+                sit
+                amet mattis lectus. Nam eleifend bibendum viverra. Aliquam rutrum dolor eget tincidunt aliquet. In
+                pretium
+                sagittis diam, tincidunt euismod tortor dictum porttitor. Integer eget lacus congue, suscipit magna sit
+                amet, suscipit dui. Sed gravida lacinia interdum. Curabitur dignissim porta tortor, tincidunt accumsan
+                nulla
+                tincidunt at. Nulla a erat luctus, elementum leo sed, rhoncus est. Etiam ultrices nunc at quam imperdiet
+                gravida. Nullam at quam quam. Vestibulum auctor faucibus risus, vel ornare justo pellentesque tempus.
+                Nam
+                dictum posuere vehicula. Morbi posuere aliquet vestibulum.
 
-            Aenean fermentum ut leo non tincidunt. Etiam vel enim pretium, tincidunt lectus eu, maximus diam.
-            Suspendisse commodo ex ac pellentesque faucibus. Maecenas bibendum lacus in vestibulum pulvinar. Phasellus
-            posuere molestie semper. Etiam ac enim mauris. Donec in velit gravida, vehicula enim vitae, consequat
-            lectus. Phasellus nisl leo, lacinia at orci id, tincidunt dapibus felis. Praesent ac felis lacinia,
-            tristique purus nec, condimentum dolor.
+                Pellentesque neque nisi, egestas vitae pretium eget, imperdiet et augue. Nam nec dapibus lacus. Nulla
+                vulputate placerat turpis sed pulvinar. Sed vitae velit ac enim feugiat pellentesque at eget libero. Sed
+                imperdiet maximus est, id efficitur tortor dictum id. Praesent efficitur elit in eros tincidunt,
+                faucibus
+                viverra purus cursus. Integer non finibus odio, eu dignissim nulla. Aenean dignissim, nulla nec blandit
+                vestibulum, nulla ligula suscipit tellus, sed consectetur risus velit vel ipsum. Nulla ut porttitor
+                augue.
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras a
+                orci ac
+                turpis dignissim mollis. Nullam dolor purus, facilisis vulputate interdum ultricies, ultrices quis dui.
+                Etiam ac odio urna. Curabitur sed nisi sem. Suspendisse hendrerit massa quis feugiat blandit.
 
-            In et urna non urna auctor luctus. Maecenas consequat neque eu arcu posuere, ac iaculis enim imperdiet. Nunc
-            eu felis a nibh tristique vehicula at sed libero. Ut condimentum nisl quam, in semper turpis porttitor non.
-            Pellentesque at dolor at ante fermentum aliquam eu sit amet mauris. Fusce lobortis, augue mattis elementum
-            dignissim, risus elit iaculis nisl, tincidunt iaculis mauris tortor auctor erat. Cras bibendum non lacus at
-            consectetur. Vestibulum sed commodo purus. Mauris nec quam dictum, vestibulum quam at, mollis magna. Morbi
-            vel dictum quam. Integer nec elit ut tellus lobortis efficitur. Suspendisse volutpat eu lectus et venenatis.
+                Phasellus feugiat lobortis justo ut tristique. Praesent sed purus id dolor vulputate tempor vitae eget
+                neque. Praesent sagittis, libero vitae commodo luctus, justo augue luctus lectus, vitae vehicula neque
+                ante
+                sit amet justo. Phasellus venenatis, nisl a scelerisque consequat, leo nisi convallis arcu, vel
+                tincidunt
+                massa justo ac ligula. Nullam eu ipsum est. Vivamus nisl purus, viverra a hendrerit ut, ornare vitae
+                urna.
+                Donec pharetra, sem luctus congue imperdiet, quam augue pretium sem, vitae iaculis felis eros id tortor.
+                Praesent nec mi quam. Pellentesque aliquam tortor ut lectus semper tincidunt. Sed ac purus ex. Aliquam
+                ipsum
+                eros, faucibus ac metus et, mattis interdum libero. Aliquam erat volutpat. Etiam sed tristique lacus,
+                vel
+                consectetur ipsum. Phasellus molestie ex eget ex vehicula, nec interdum nibh gravida. Fusce eget urna
+                est.
+
+                Phasellus faucibus non dui non volutpat. Quisque id libero eget arcu cursus pellentesque. Pellentesque a
+                nulla sagittis, rutrum tellus sed, gravida quam. Nullam sapien ipsum, euismod quis tortor quis, porta
+                vehicula velit. Aliquam ut purus eget ante tincidunt molestie. Aenean auctor tristique augue, in semper
+                dolor molestie non. Proin volutpat, libero at semper gravida, justo erat finibus libero, at luctus ipsum
+                nisi id tellus. Nunc quis ligula ex. Pellentesque in nulla a nibh fringilla iaculis vel a odio. Morbi id
+                quam erat. Donec et tellus sem. Nullam eleifend mi non tellus maximus rutrum. Vestibulum ante ipsum
+                primis
+                in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sit amet mauris et tellus dictum
+                finibus.
+
+                Aenean fermentum ut leo non tincidunt. Etiam vel enim pretium, tincidunt lectus eu, maximus diam.
+                Suspendisse commodo ex ac pellentesque faucibus. Maecenas bibendum lacus in vestibulum pulvinar.
+                Phasellus
+                posuere molestie semper. Etiam ac enim mauris. Donec in velit gravida, vehicula enim vitae, consequat
+                lectus. Phasellus nisl leo, lacinia at orci id, tincidunt dapibus felis. Praesent ac felis lacinia,
+                tristique purus nec, condimentum dolor.
+
+                In et urna non urna auctor luctus. Maecenas consequat neque eu arcu posuere, ac iaculis enim imperdiet.
+                Nunc
+                eu felis a nibh tristique vehicula at sed libero. Ut condimentum nisl quam, in semper turpis porttitor
+                non.
+                Pellentesque at dolor at ante fermentum aliquam eu sit amet mauris. Fusce lobortis, augue mattis
+                elementum
+                dignissim, risus elit iaculis nisl, tincidunt iaculis mauris tortor auctor erat. Cras bibendum non lacus
+                at
+                consectetur. Vestibulum sed commodo purus. Mauris nec quam dictum, vestibulum quam at, mollis magna.
+                Morbi
+                vel dictum quam. Integer nec elit ut tellus lobortis efficitur. Suspendisse volutpat eu lectus et
+                venenatis.
+            </div>
         </div>
 
         <!-- Footer -->
@@ -230,12 +280,16 @@
                 </div>
             </div>
         </footer>
-        <!-- Script Bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-        </script>
-        <!-- Script -->
-        <script src="assets/script.js"></script>
+    </div>
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <!-- Script -->
+    <script src="assets/script.js"></script>
 </body>
 
 </html>
