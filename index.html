@@ -148,12 +148,12 @@
     </div>
     </div>
 
-    <div class="contnaire d-felx border">
-        <div class="row">
-            <div class="col">
+    <div class="container d-flex border ">
+        <div class="row mx-auto my-auto justify-content-center text-center mt-4">
+            <div class="col-12 col-md-12">
                 <h3>Contactez-nous</h3>
             </div>
-            <div class="col">
+            <div class="col-12 col-md-12">
                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                     data-bs-target="#ndFormulaire">Juste Ici</button>
             </div>
@@ -201,55 +201,75 @@
         </div>
     </div>
 
+
+
+
+
     <div class="modal fade" id="ndFormulaire" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Formulaire de contact</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header ">
+                    <h5 class="modal-title mx-auto" id="exampleModalLabel">Formulaire de contact</h5>
+                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body align-items-center ">
                     <form name="contact" id="ndContact">
+                        <div class="row justify-content-center mb-3">
+                            <div class="col-12 col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control ndInputSelect" id="ndFormLastName" placeholder="Nom :">
+                                    <label for="floatingInput">Nom :</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control ndInputSelect" id="ndFormFirstName" placeholder="Prénom :">
+                                    <label for="floatingInput">Prénom :</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mb-3">
+                            <div class="col-12 col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control ndInputSelect" id="ndFormMail" placeholder="adresse mail">
+                                    <label for="floatingInput">Adresse mail :</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control ndInputSelect" id="ndFormNumber" placeholder="téléphone :">
+                                    <label for="floatingInput">téléphone :</label>
+                                </div>
+                            </div>
 
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <input type="text" name="" id="">
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <input type="text" name="" id="">
-                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <input type="text" name="" id="">
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <input type="text" name="" id="">
-                            </div>
-
-                        </div>
-                        <div class="row">
+                        <div class="row justify-content-center mb-3">
                             <div class="col-12">
-                                <input type="textarea" name="" id="">
+                                <textarea class="form-control ndInputSelect" placeholder="Votre demande" id="ndTextArea"
+                                    style="height: 150px;"></textarea>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row justify-content-center mb-3">
                             <div class="col-12">
-                                <input type="checkbox" name="" id="">
+                                <div class="form-floating">
+                                    <select class="form-select ndInputSelect" id="ndFormObject" aria-label="Objet de la demande :">
+                                        <option value="Devis">Devis</option>
+                                        <option value="Réservation">Réservation</option>
+                                        <option value="Contact">Contact</option>
+                                    </select>
+                                    <label for="floatingSelect">Votre demande :</label>
+                                </div>
                             </div>
                         </div>
-                    
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-secondary" >Envoyer</button>
-                </div>
-            </form>
+                    <button type="button" class="btn btn-danger mt-4 mb-3 ndRaz">RAZ</button>
+                    <input type="submit" value="Envoyer" class="btn btn-primary mt-4 mb-3" disabled="true" id="ndSendForm"/></div>
             </div>
+            </form>
         </div>
     </div>
-
-
+    </div>
     <!-- Script -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
