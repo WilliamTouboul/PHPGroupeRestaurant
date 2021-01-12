@@ -1,29 +1,74 @@
-.containerMaster {
-    background-color: red;
+@font-face {
+    font-family: 'mohavemedium';
+    src: url('./font/mohave.medium-webfont.woff2') format('woff2'),
+        url('./font/mohave.medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
+body {
+    font-family: mohavemedium;
+}
+
+@font-face {
+    font-family: 'fontTitle';
+    src: url('./font/fonttest-webfont.woff2') format('woff2'),
+        url('./font/fonttest-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#logo {
+    font-family: 'fontTitle';
+}
+#logo {
+    border : solid 2px #A44A1A;
+    text-decoration : none;
+    color : #A44A1A;
+    padding-left : 12px;
+    padding-right : 12px;
+}
+
+/* Logo centre Nav */
 #wtLogoNavbar {
     text-align: center;
 }
+.navbar-toggler {
+    background-color : #A44A1A;
+}
 
+/*carousel*/
 #carousel {
     margin-bottom: 50px;
 }
 
+/*taille police caption */
 .wtCarouselTitle {
-    font-size: 48px;
+    font-size: 95px;
+    border :rgb(255, 255, 255) 6px solid;
+    width:fit-content;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top : 40px;
+    padding-bottom : 40px;
 }
 
-.wtCarouselDesc {
-    font-size: 36px;
-}
-
+/*centrage caption*/
 .carousel-caption {
     top: 50%;
     transform: translateY(-50%);
     bottom: initial
 }
 
+/* size carousel */
 .wtCarouselElements {
     height: 100vh;
     width: 100%;
@@ -41,28 +86,25 @@
     }
 }
 
+/* padding pour aerer le footer */
 footer {
     padding-top: 55px;
     padding-bottom: 55px;
 }
 
-.wtFooterElements {
-    text-align: center;
-}
-
+/* mise en forme lien footer */
 .wtRSLink {
     text-decoration: none;
     color: black;
 }
 
+/* mise en forme mention legales */
 .wtLegalMentionsPropName {
     font-weight: bold;
 
 }
 
-
-/* test Side --------------------------------------------------------------------------------------------*/
-/* test Side --------------------------------------------------------------------------------------------*/
+/* Sidebar */
 .sidebar {
     height: 100%;
     width: 60px;
@@ -70,7 +112,7 @@ footer {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: rgb(255,255,255);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -81,13 +123,13 @@ footer {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #A44A1A;
     display: block;
     transition: 0.3s;
 }
 
 .sidebar a:hover {
-    color: #f1f1f1;
+    color: #1b1822;
 }
 
 .sidebar .closebtn {
@@ -97,6 +139,11 @@ footer {
     font-size: 36px;
     margin-left: 50px;
 }
+.wtSidebarIcon {
+    height : 36px;
+    width : auto;
+    margin-left : -8px;
+}
 
 .icon-text {
     vertical-align: middle;
@@ -105,13 +152,16 @@ footer {
 #main {
     transition: margin-left .5s;
     padding: 16px;
+
 }
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 
 @media screen and (max-height: 600px) {
     .sidebar {
         padding-top: 12px;
     }
+
     .sidebar a {
         font-size: 14px;
     }
@@ -119,6 +169,39 @@ footer {
 
 
 .wtDisableNone {
-    display : none;
-    width : -1000px;
+    display: none;
+    width: -1000px;
 }
+.wtDisableNoneTitles {
+    display:none;
+}
+
+#wtNavbar {
+    background-color: rgb(255, 255, 255);
+}
+
+.wtNavbarLink {
+    text-decoration: none;
+    color: #A44A1A;
+    margin-left : 35px;
+    margin-right : 35px;
+}
+.wtNavbarLink:hover{
+    color : #1b1822;
+}
+
+.wtLogoTop {
+    height: 56px;
+    width: auto;
+}
+
+.wtIconBot {
+    height : 70px;
+    width : auto;
+}
+
+#wtImgBranding {
+    width : 100%;
+    height : auto;
+}
+
