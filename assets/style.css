@@ -1,5 +1,40 @@
+@font-face {
+    font-family: 'mohavemedium';
+    src: url('./font/mohave.medium-webfont.woff2') format('woff2'),
+         url('./font/mohave.medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'fontTitle';
+    src: url('./font/fonttest-webfont.woff2') format('woff2'),
+         url('./font/fonttest-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    font-family: mohavemedium;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'fontTitle';
+    color:#fff;
+}
+
+.ndSizeTitlteBagel{
+    font-size:25px;
+}
 .containerMaster{
     height: 100vh;
+}
+
+.ndTexteMiniature{
+    font-size:19px;
+    line-height: 1.3em;
 }
 
 
@@ -37,9 +72,6 @@
       top:40%; 
       position: absolute;
 }
-
-
-
 
    /********* Hover image et texte *******/
 /* Overlay */
@@ -86,11 +118,98 @@
    }
 
    .ndAbout{
-       padding-top: 150PX;
+       padding-top: 50PX;
+       padding-bottom: 50PX;
    }
 
 
+   .ndPosTextMenu{
+    position: absolute;
+    bottom:180px;
+    left:185px;
+   }
 
+   .ndPosTextMenu h4{
+       font-size: 60px;
+   }
+
+   @media (max-width:992px){
+    .ndPosTextMenu{
+        position: absolute;
+        bottom:75px;
+        left:109px;
+        
+       }
+       .ndPosTextMenu h4{
+        font-size: 25px;
+    }
+   }
+
+
+   .ndBagel{
+       background-color: #a48566;
+   }
+
+   .ndSectionAbout{
+    background-color:#5f715b;
+   }
+   
+   
+   #ndImgMenuSalade{
+    background: no-repeat center url("./img/salade.png");
+    background-size: cover;
+    max-width:100%;
+    height: 100%;
+}
+
+#ndImgMenuSoupe{
+    background: no-repeat center url("./img/soupe.png");
+    background-size: cover;
+    max-width:100%;
+    height: 100%;
+}
+
+#ndImgMenuBoisson{
+    background: no-repeat center url("./img/coffee.png");
+    background-size: cover;
+    max-width:100%;
+    height: 100%;
+}
+
+#ndImgMenuDessert{
+    background: no-repeat center url("./img/cookie.png");
+    background-size: cover;
+    max-width:100%;
+    height: 100%;
+}
+
+.ndSizeRowMenu{
+    height: 450px;
+    color : white;
+    font-size:80px;
+    font-family: 'fontTitle';
+}
+
+@media (max-width:760px){
+    .ndSizeRowMenu{
+        font-size: 60px;
+    }
+}
+@media (max-width:760px){
+    .ndSizeRowMenu{
+        height: 300px;
+    }    
+   }
+
+.ndCenterTextMenu{
+    padding-top: 55px;
+}
+
+
+.ndButtonMenu{
+    width:202px;
+    height:50px;
+}
 
 
 
