@@ -54,6 +54,20 @@
     height: 100%;
     width: 100%;
    }
+
+   @media (max-width:992px){
+    .ndContentImage .ndHover {
+        position: absolute;
+        left:0; 
+        right:0; 
+        top:35%; 
+        opacity: 0;
+        transition: .5s ease;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+       }
+   }
    /* Apparition overlay sur passage souris */
    .ndContentImage:hover .ndHover {
     opacity: 1;
@@ -69,6 +83,10 @@
 
    .ndContentImageHover{
        opacity: 0.5;
+   }
+
+   .ndAbout{
+       padding-top: 150PX;
    }
 
 
