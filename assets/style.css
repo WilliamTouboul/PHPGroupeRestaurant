@@ -26,7 +26,7 @@ h3,
 h4,
 h5,
 h6,
-#logo {
+#logo, #logoLittle {
     font-family: 'fontTitle';
 }
 #logo {
@@ -35,6 +35,10 @@ h6,
     color : #A44A1A;
     padding-left : 12px;
     padding-right : 12px;
+}
+#logoLittle {
+    text-decoration : none;
+    color : #A44A1A;
 }
 
 /* Logo centre Nav */
@@ -81,9 +85,13 @@ h6,
         height: auto;
     }
 
-    #wtLogoNavbar {
+    .wtLogoNavbar {
         display: none;
     }
+}
+
+.wtLogoDisplayNone {
+    display : none;
 }
 
 /* padding pour aerer le footer */
@@ -194,6 +202,10 @@ footer {
     height: 56px;
     width: auto;
 }
+.wtLogoTopReduce {
+    height : 36px;
+    width : auto;
+}
 
 .wtIconBot {
     height : 70px;
@@ -205,3 +217,18 @@ footer {
     height : auto;
 }
 
+#wtContactButton {
+    border : 2px solid #A44A1A;
+    color: #A44A1A;
+    background-color:rgb(255,255,255);
+    padding : 16px;
+}
+
+.wtScrollNavbar {
+    height : 35px;
+}
+
+.wtRSLinkTopNavbar {
+    height : 70px;
+    width : auto;
+}

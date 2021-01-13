@@ -1,31 +1,3 @@
-/* Fonction pour Toggle la sidebar */
-var mini = true;
-
-function toggleSidebar() {
-    if (document.getElementById("wtSidebar").classList.contains("wtDisableNone")) {
-        document.getElementById("wtMain").style.marginLeft = "0px";
-
-    } else {
-        if (mini) {
-            console.log("opening sidebar");
-            document.getElementById("wtSidebar").style.width = "250px";
-            document.getElementById("wtMain").style.marginLeft = "250px";
-            document.getElementById("wtMenuSidebar").classList.remove("wtDisableNoneTitles");
-            document.getElementById("wtAboutSidebar").classList.remove("wtDisableNoneTitles");
-            document.getElementById("wtContactSidebar").classList.remove("wtDisableNoneTitles");
-            this.mini = false;
-        } else {
-            console.log("closing sidebar");
-            document.getElementById("wtSidebar").style.width = "100px";
-            document.getElementById("wtMain").style.marginLeft = "100px";
-            document.getElementById("wtMenuSidebar").classList.add("wtDisableNoneTitles");
-            document.getElementById("wtAboutSidebar").classList.add("wtDisableNoneTitles");
-            document.getElementById("wtContactSidebar").classList.add("wtDisableNoneTitles");
-            this.mini = true;
-        }
-    }
-};
-
 // Fonction pour faire apparaitre la sidebar en scrollant 
 var up = false;
 var newscroll;
@@ -34,21 +6,35 @@ $(window).scroll(function () {
     newscroll = $(window).scrollTop();
     console.log(newscroll);
     if (newscroll >= 640 && !up) {
-        $('#wtNavbar').addClass("wtDisableNone");
-        $('#wtSidebar').removeClass("wtDisableNone");
-        document.getElementById("wtMain").style.marginLeft = "100px";
+        $('#wtNavbar').addClass("wtScrollNavbar ");
+        $('#wtLogoNavbar').addClass("wtLogoDisplayNone");
+        $('#wtLogoNavbarLittle').removeClass("wtLogoDisplayNone");
+        $('#logoFacebookTop').removeClass("wtLogoTop");
+        $('#logoInstaTop').removeClass("wtLogoTop");
+        $('#logoTwitterTop').removeClass("wtLogoTop")
+        $('#logoFacebookTop').addClass("wtLogoTopReduce");
+        $('#logoInstaTop').addClass("wtLogoTopReduce");
+        $('#logoTwitterTop').addClass("wtLogoTopReduce");
         up = !up;
         console.log(up);
 
     } else if (newscroll <= 640 && up) {
-        $('#wtNavbar').removeClass("wtDisableNone");
-        $('#wtSidebar').addClass("wtDisableNone");
-        document.getElementById("wtMain").style.marginLeft = "0px";
-
+        $('#wtNavbar').removeClass("wtScrollNavbar ");
+        $('#wtLogoNavbar').removeClass("wtLogoDisplayNone");
+        $('#wtLogoNavbarLittle').addClass("wtLogoDisplayNone");
+        $('#logoFacebookTop').addClass("wtLogoTop");
+        $('#logoInstaTop').addClass("wtLogoTop");
+        $('#logoTwitterTop').addClass("wtLogoTop")
+        $('#logoFacebookTop').removeClass("wtLogoTopReduce");
+        $('#logoInstaTop').removeClass("wtLogoTopReduce");
+        $('#logoTwitterTop').removeClass("wtLogoTopReduce");
         up = !up;
     }
+
     newscroll = $(window).scrollTop();
 });
+
+
 // RAZ
 $(document).on('click', '.ndRaz', function () {
     document.getElementById("ndFormLastName").value = null;
